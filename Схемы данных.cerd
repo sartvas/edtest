@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+<diagram>
+	<tab name="EDTtest_project" projectName="EDTtest_project;">
+		<entities>
+			<entity x="200" y="71" width="200" height="71" eClass="Catalog" uri="bm://EDTtest_project/Catalog.Номенклатура#/">
+			</entity>
+			<entity x="660" y="317" width="200" height="55" eClass="Document" uri="bm://EDTtest_project/Document.ПрайсЛист#/">
+			</entity>
+			<entity x="440" y="663" width="200" height="55" eClass="Document" uri="bm://EDTtest_project/Document.ЗаказыКлиента#/">
+			</entity>
+			<entity x="1347" y="360" width="200" height="122" eClass="AccumulationRegister" uri="bm://EDTtest_project/AccumulationRegister.ОстаткиНоменклатуры#/">
+			</entity>
+			<entity x="1600" y="265" width="200" height="55" eClass="Document" uri="bm://EDTtest_project/Document.ПриходныеНакладные#/">
+			</entity>
+			<entity x="1094" y="522" width="200" height="101" eClass="Document" uri="bm://EDTtest_project/Document.РасходныеНакладные#/">
+			</entity>
+			<entity x="660" y="412" width="200" height="55" eClass="Document" uri="bm://EDTtest_project/Document.ПриходыДенежныхСредств#/">
+			</entity>
+			<entity x="1853" y="170" width="200" height="55" eClass="Document" uri="bm://EDTtest_project/Document.ЗаказыПоставщикам#/">
+			</entity>
+			<entity x="913" y="203" width="200" height="74" eClass="InformationRegister" uri="bm://EDTtest_project/InformationRegister.УчетЦенНоменклатуры#/">
+			</entity>
+		</entities>
+		<relations for="main">
+			<relation source="Документ.РасходныеНакладные" target="Справочник.Номенклатура">
+				<pathPoint x="1094" y="555"></pathPoint>
+				<pathPoint x="1123" y="555"></pathPoint>
+				<pathPoint x="1123" y="111"></pathPoint>
+				<pathPoint x="400" y="111"></pathPoint>
+			</relation>
+			<relation source="Документ.РасходныеНакладные" target="Документ.ЗаказыКлиента">
+				<pathPoint x="1094" y="572"></pathPoint>
+				<pathPoint x="590" y="572"></pathPoint>
+				<pathPoint x="590" y="663"></pathPoint>
+			</relation>
+			<relation source="Документ.ПриходныеНакладные" target="Документ.ЗаказыПоставщикам">
+				<pathPoint x="1732" y="265"></pathPoint>
+				<pathPoint x="1732" y="198"></pathPoint>
+				<pathPoint x="1853" y="198"></pathPoint>
+			</relation>
+			<relation source="РегистрСведений.УчетЦенНоменклатуры" target="Справочник.Номенклатура">
+				<pathPoint x="1013" y="203"></pathPoint>
+				<pathPoint x="1013" y="121"></pathPoint>
+				<pathPoint x="400" y="121"></pathPoint>
+			</relation>
+			<relation source="РегистрСведений.УчетЦенНоменклатуры" target="Справочник.Номенклатура">
+				<pathPoint x="1013" y="203"></pathPoint>
+				<pathPoint x="1013" y="116"></pathPoint>
+				<pathPoint x="400" y="116"></pathPoint>
+			</relation>
+			<relation source="РегистрНакопления.ОстаткиНоменклатуры" target="Документ.ПриходныеНакладные">
+				<pathPoint x="1479" y="360"></pathPoint>
+				<pathPoint x="1479" y="293"></pathPoint>
+				<pathPoint x="1600" y="293"></pathPoint>
+			</relation>
+			<relation source="Документ.ЗаказыКлиента" target="Справочник.Номенклатура">
+				<pathPoint x="440" y="690"></pathPoint>
+				<pathPoint x="300" y="690"></pathPoint>
+				<pathPoint x="300" y="142"></pathPoint>
+			</relation>
+			<relation source="РегистрНакопления.ОстаткиНоменклатуры" target="Справочник.Номенклатура">
+				<pathPoint x="1413" y="360"></pathPoint>
+				<pathPoint x="1413" y="101"></pathPoint>
+				<pathPoint x="400" y="101"></pathPoint>
+			</relation>
+			<relation source="Документ.ПриходыДенежныхСредств" target="Документ.ЗаказыКлиента">
+				<pathPoint x="660" y="439"></pathPoint>
+				<pathPoint x="540" y="439"></pathPoint>
+				<pathPoint x="540" y="663"></pathPoint>
+			</relation>
+			<relation source="РегистрСведений.УчетЦенНоменклатуры" target="Документ.ПрайсЛист">
+				<pathPoint x="913" y="240"></pathPoint>
+				<pathPoint x="792" y="240"></pathPoint>
+				<pathPoint x="792" y="317"></pathPoint>
+			</relation>
+			<relation source="Документ.ЗаказыКлиента" target="Справочник.Номенклатура">
+				<pathPoint x="490" y="663"></pathPoint>
+				<pathPoint x="490" y="136"></pathPoint>
+				<pathPoint x="400" y="136"></pathPoint>
+			</relation>
+			<relation source="Документ.ПрайсЛист" target="Справочник.Номенклатура">
+				<pathPoint x="726" y="317"></pathPoint>
+				<pathPoint x="726" y="131"></pathPoint>
+				<pathPoint x="400" y="131"></pathPoint>
+			</relation>
+			<relation source="РегистрНакопления.ОстаткиНоменклатуры" target="Документ.ПриходныеНакладные">
+				<pathPoint x="1547" y="421"></pathPoint>
+				<pathPoint x="1700" y="421"></pathPoint>
+				<pathPoint x="1700" y="320"></pathPoint>
+			</relation>
+			<relation source="Документ.ЗаказыПоставщикам" target="Справочник.Номенклатура">
+				<pathPoint x="1953" y="170"></pathPoint>
+				<pathPoint x="1953" y="81"></pathPoint>
+				<pathPoint x="400" y="81"></pathPoint>
+			</relation>
+			<relation source="Документ.ПриходныеНакладные" target="Документ.ЗаказыПоставщикам">
+				<pathPoint x="1800" y="292"></pathPoint>
+				<pathPoint x="1953" y="292"></pathPoint>
+				<pathPoint x="1953" y="225"></pathPoint>
+			</relation>
+			<relation source="Документ.ПрайсЛист" target="Справочник.Номенклатура">
+				<pathPoint x="726" y="317"></pathPoint>
+				<pathPoint x="726" y="126"></pathPoint>
+				<pathPoint x="400" y="126"></pathPoint>
+			</relation>
+			<relation source="РегистрНакопления.ОстаткиНоменклатуры" target="Документ.РасходныеНакладные">
+				<pathPoint x="1347" y="421"></pathPoint>
+				<pathPoint x="1226" y="421"></pathPoint>
+				<pathPoint x="1226" y="522"></pathPoint>
+			</relation>
+			<relation source="Документ.РасходныеНакладные" target="Справочник.Номенклатура">
+				<pathPoint x="1160" y="522"></pathPoint>
+				<pathPoint x="1160" y="106"></pathPoint>
+				<pathPoint x="400" y="106"></pathPoint>
+			</relation>
+			<relation source="Документ.ЗаказыПоставщикам" target="Справочник.Номенклатура">
+				<pathPoint x="1953" y="170"></pathPoint>
+				<pathPoint x="1953" y="76"></pathPoint>
+				<pathPoint x="400" y="76"></pathPoint>
+			</relation>
+			<relation source="РегистрНакопления.ОстаткиНоменклатуры" target="Справочник.Номенклатура">
+				<pathPoint x="1413" y="360"></pathPoint>
+				<pathPoint x="1413" y="96"></pathPoint>
+				<pathPoint x="400" y="96"></pathPoint>
+			</relation>
+			<relation source="Документ.ПриходныеНакладные" target="Справочник.Номенклатура">
+				<pathPoint x="1666" y="265"></pathPoint>
+				<pathPoint x="1666" y="91"></pathPoint>
+				<pathPoint x="400" y="91"></pathPoint>
+			</relation>
+			<relation source="Документ.ПриходныеНакладные" target="Справочник.Номенклатура">
+				<pathPoint x="1666" y="265"></pathPoint>
+				<pathPoint x="1666" y="86"></pathPoint>
+				<pathPoint x="400" y="86"></pathPoint>
+			</relation>
+			<relation source="Документ.РасходныеНакладные" target="Документ.ЗаказыКлиента">
+				<pathPoint x="1194" y="623"></pathPoint>
+				<pathPoint x="1194" y="691"></pathPoint>
+				<pathPoint x="640" y="691"></pathPoint>
+			</relation>
+			<relation source="РегистрНакопления.ОстаткиНоменклатуры" target="Документ.РасходныеНакладные">
+				<pathPoint x="1447" y="482"></pathPoint>
+				<pathPoint x="1447" y="588"></pathPoint>
+				<pathPoint x="1294" y="588"></pathPoint>
+			</relation>
+			<relation source="РегистрСведений.УчетЦенНоменклатуры" target="Документ.ПрайсЛист">
+				<pathPoint x="1013" y="277"></pathPoint>
+				<pathPoint x="1013" y="345"></pathPoint>
+				<pathPoint x="860" y="345"></pathPoint>
+			</relation>
+		</relations>
+	</tab>
+</diagram>
